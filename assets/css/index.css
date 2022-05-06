@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Inspiration", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+.navHeader {
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.navHeader li,
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.banner {
+  background: url("/assets/imgs/img.svg") top center no-repeat;
+  background-size: contain;
+  object-fit: fill;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  background-color: #1e1e1e;
+  color: #d9d9d9;
+  padding: 0.4rem 1rem;
+  font: 500 14px;
+}
+.services {
+  padding: 4rem;
+}
+
+.services .content {
+  padding: 0 2rem 1rem 1rem;
+}
+
+.wrapper2 img {
+  width: 20vw;
+  height: 25vh;
+  object-fit: contain;
+}
+
+.services p {
+  padding: 1rem 0;
+  height: 18vh;
+  color: #403f3f;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.services > button {
+  display: block;
+  margin: 0 auto;
+}
+.services h2,
+h3 {
+  text-align: center;
+}
+
+.services .wrapper {
+  display: flex;
+  margin: 10vh 0;
+}
+.services .wrapper2 {
+  display: flex;
+  flex: 1;
+}

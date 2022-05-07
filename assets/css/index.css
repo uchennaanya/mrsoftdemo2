@@ -9,37 +9,66 @@
 }
 
 .navHeader {
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   position: fixed;
   width: 100%;
   display: flex;
+  height: auto;
   justify-content: space-between;
   align-items: center;
   background-color: #f7f7f7;
 }
-.navHeader li,
-a {
-  text-decoration: none;
+.navHeader li {
   display: inline-block;
 }
+.navHeader a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+}
+.active {
+  background-color: #003f4e;
+  color: #61e0ff !important;
+}
 .banner {
-  background: url("/assets/imgs/img.svg") top center no-repeat;
+  background: url("/assets/imgs/Rectangle\ 62.svg"),
+    url("/assets/imgs/img.svg") top center no-repeat;
   background-size: cover;
   object-fit: fill;
   display: flex;
-  align-items: center;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
+  padding-left: 5rem;
   height: 500px;
 }
-button {
+
+.banner h1 {
+  font-style: Bold;
+  font-weight: 700, bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #33d8a6;
+}
+.banner div {
+  display: flex;
+  align-items: center;
+}
+.banner h3 {
+  text-align: left;
+}
+section a {
   background-color: #1e1e1e;
   color: #d9d9d9;
   padding: 0.4rem 1rem;
+  text-decoration: none;
   font: 500 14px;
   border: none;
 }
 .services {
+  background: url("/assets/imgs/Ellipse5.svg") no-repeat center 100px;
+  background-size: 35vw;
+  object-fit: fill;
   padding: 4rem;
 }
 
@@ -61,8 +90,10 @@ button {
   line-height: 17px;
 }
 
-.services > button {
+.services > a {
   display: block;
+  width: 200px;
+  text-align: center;
   margin: 0 auto;
 }
 .services h2,

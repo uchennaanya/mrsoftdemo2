@@ -32,25 +32,23 @@
 }
 .banner {
   background: url("/assets/imgs/Rectangle\ 62.svg"),
-    url("/assets/imgs/img.svg") top center no-repeat;
+    url("/assets/imgs/banner.png") top center no-repeat;
   background-size: cover;
   object-fit: fill;
   display: flex;
   color: #fff;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-left: 5rem;
   height: 500px;
 }
 
 .banner h1 {
-  font-style: Bold;
   font-weight: 700, bold;
   font-size: 60px;
   line-height: 70px;
   color: #33d8a6;
 }
-.banner div {
+.banner .welcome {
   display: flex;
   align-items: center;
 }

@@ -24,19 +24,20 @@ a {
 }
 .banner {
   background: url("/assets/imgs/img.svg") top center no-repeat;
-  background-size: contain;
+  background-size: cover;
   object-fit: fill;
-  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 500px;
 }
 button {
   background-color: #1e1e1e;
   color: #d9d9d9;
   padding: 0.4rem 1rem;
   font: 500 14px;
+  border: none;
 }
 .services {
   padding: 4rem;
@@ -53,8 +54,8 @@ button {
 }
 
 .services p {
-  padding: 1rem 0;
-  height: 18vh;
+  padding: 0.5rem 0;
+  /* height: 18vh; */
   color: #403f3f;
   font-size: 14px;
   line-height: 17px;
@@ -76,4 +77,60 @@ h3 {
 .services .wrapper2 {
   display: flex;
   flex: 1;
+}
+.services li {
+  list-style-image: url("/assets/imgs/tick.svg");
+  line-height: 50px;
+  list-style-position: inside;
+  vertical-align: Top;
+}
+
+.andel {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+}
+
+.andel p {
+  padding-bottom: 4vh;
+}
+
+.img img {
+  object-fit: fill;
+  height: 70vh;
+}
+
+footer input,
+textarea {
+  display: block;
+  padding: 0.3rem 1rem;
+  margin: 0.4rem 0;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.09);
+  border: 0.1px solid #f7f7fc;
+  border-radius: 4px;
+  color: #fefffc;
+}
+
+textarea {
+  height: 100px;
+}
+
+.address {
+  flex: 1;
+}
+form {
+  flex: 1;
+}
+
+footer i {
+  color: #007cc5;
+  padding: 0.3rem 0.5rem;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 5rem 15rem 5rem;
+  display: flex;
+  justify-content: space-between;
 }

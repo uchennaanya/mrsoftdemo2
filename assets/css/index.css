@@ -95,7 +95,7 @@ section a {
   margin: 0 auto;
 }
 .services h2,
-h3 {
+h4 {
   text-align: center;
 }
 
@@ -148,6 +148,15 @@ h3 {
 
 .product .content {
   display: flex;
+  align-items: center;
+}
+.product .content h2 {
+  text-align: left;
+}
+
+.product img {
+  width: 50%;
+  padding: 1rem;
 }
 
 .help {

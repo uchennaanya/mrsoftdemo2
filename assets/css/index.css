@@ -129,6 +129,44 @@ h3 {
   height: 70vh;
 }
 
+.partners {
+  text-align: center;
+}
+
+.partners div {
+  padding: 2rem 15rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.product {
+  text-align: center;
+  padding: 2rem 0;
+}
+.product .wrapper {
+  display: flex;
+}
+
+.product .content {
+  display: flex;
+}
+
+.help {
+  background: rgba(0, 0, 0, 1) url("/assets/imgs/help.svg") no-repeat center;
+  background-size: contain;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d9d9d9;
+  flex-direction: column;
+}
+.help a {
+  background: #003f4e;
+  margin-top: 3rem;
+}
+.help p {
+  padding-top: 1rem;
+}
 footer input,
 textarea {
   display: block;
@@ -143,6 +181,12 @@ textarea {
 
 textarea {
   height: 100px;
+}
+input[type="submit"] {
+  background: #007cc5;
+  border-radius: 0;
+  border: none;
+  width: auto;
 }
 
 .address {
@@ -159,7 +203,7 @@ footer i {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 4rem 5rem 15rem 5rem;
+  padding: 4rem 5rem 8rem 5rem;
   display: flex;
   justify-content: space-between;
 }

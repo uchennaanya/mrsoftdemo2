@@ -30,6 +30,12 @@
   background-color: #003f4e;
   color: #61e0ff !important;
 }
+
+.active:hover {
+  color: #003f4e !important;
+  background: #61e0ff;
+  transition: all 0.9s ease-in-out;
+}
 .banner {
   background: url("/assets/imgs/Rectangle\ 62.svg"),
     url("/assets/imgs/banner.png") top center no-repeat;
@@ -37,10 +43,28 @@
   object-fit: fill;
   display: flex;
   color: #fff;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 5rem;
+  padding:0 3rem;
   height: 500px;
 }
+
+.banner .span {
+color: black; font-size: 30px; cursor: pointer; background: rgba(0, 0, 0, 0.3);
+padding: 6px;
+width:fit-content;
+height:fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+
+.banner .span:hover {
+  color: #fff;
+  background: #000;
+  transition: all 0.5s ease;
+  }
 
 .banner h1 {
   font-weight: 700, bold;
@@ -63,6 +87,11 @@ section a {
   font: 500 14px;
   border: none;
 }
+section a:hover {
+  color: #1e1e1e;
+  background-color: #d9d9d9;
+  transition: all 0.9s ease;
+}
 .services {
   background: url("/assets/imgs/Ellipse5.svg") no-repeat center 100px;
   background-size: 35vw;
@@ -78,6 +107,15 @@ section a {
   text-align: left;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 1px;
+}
+
 .product > h4, .services > h4 {
   color: #07048E;
 }
@@ -89,7 +127,6 @@ section a {
 
 .services p {
   padding: 0.5rem 0;
-  /* height: 18vh; */
   color: #403f3f;
   font-size: 14px;
   line-height: 17px;
@@ -237,6 +274,13 @@ input[type="submit"] {
   padding: 0.3rem 2rem;
   width: auto;
   margin: 0 auto;
+}
+
+input[type='submit']:hover {
+background: #fff;
+color: #007cc5;
+transition: all 0.9s ease;
+cursor: pointer;
 }
 
 .addr{

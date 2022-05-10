@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f7f7f7;
+  z-index: 2 !important;
 }
 .navHeader li {
   display: inline-block;
@@ -79,6 +80,10 @@ border-radius: 50%;
 .banner h3 {
   text-align: left;
 }
+.text--dynamic {
+ text-transform: uppercase;
+ transition: all 0.5s ease;
+}
 section a {
   background-color: #1e1e1e;
   color: #d9d9d9;
@@ -122,7 +127,7 @@ section a:hover {
 .wrapper2 img {
   width: 20vw;
   height: 25vh;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .services p {

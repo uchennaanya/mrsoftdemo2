@@ -7,7 +7,16 @@
     <script src="https://use.fontawesome.com/0bb1cf78cb.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inspiration&family=Open+Sans:wght@300&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>M-R International</title>
@@ -26,15 +35,15 @@
         </nav>
     </header>
     <section class="banner">
-        <span class="iconify-inline span" data-icon="ep:arrow-left-bold"></span>
-        <div style="flex: 1; padding-left: 2rem;">
+        <span class="iconify-inline span" data-icon="ep:arrow-left-bold"e></span>
+        <div style="flex: 1; padding-left: 2rem; z-index: 1;" class="animate__animated animate__backInLeft" >
             <div class="welcome">
                 <h2 style="padding-right: 1rem;">Welcome to</h2>
                 <h1>MRsoft</h1>
             </div>
-            <p>
-                We provide Innovative ICT Solutions...
-            </p>
+            <div style="display: flex;">
+               <h4 style="padding-right: 0.5rem;">We provide </h4><h4 class="text--dynamic"></h4>
+            </div>
         </div>
         <span class="iconify span" data-icon="ep:arrow-right-bold"></span>
     </section>
@@ -43,7 +52,7 @@
         <h2>Our Services</h2>
         <div class="wrapper">
             <div class="wrapper2">
-                <img src="/assets/imgs/Rectangle 43.svg" alt="">
+                <img src="/assets/imgs/Rectangle 43.svg" alt="Software development" class="wow slideInLeft">
                 <div class="content">
                     <h4>SOFTWARE DEVELOPEMENT</h4>
                     <P>
@@ -53,7 +62,7 @@
                 </div>
             </div>
             <div class="wrapper2">
-                <img src="/assets/imgs/Mask group.svg" alt="">
+                <img src="/assets/imgs/Mask group.svg" alt="Hosting">
                 <div class="content">
                     <h4>HOSTING</h4>
                     <P>
@@ -65,7 +74,7 @@
         </div>
         <div class="wrapper">
             <div class="wrapper2">
-                <img src="/assets/imgs/Rectangle 43.svg" alt="">
+                <img src="/assets/imgs/Rectangle 43.svg" alt="Training">
                 <div class="content">
                     <h4>TRAINING</h4>
                     <P>
@@ -75,7 +84,7 @@
                 </div>
             </div>
             <div class="wrapper2">
-                <img src="/assets/imgs/Rectangle 43.svg" alt="">
+                <img src="/assets/imgs/Rectangle 43.svg" alt="Call center management">
                 <div class="content">
                     <h4>CALL CENTER MANAGEMENT</h4>
                     <P>
@@ -108,29 +117,34 @@
     <section class="product">
         <h4>Some of our finest work</h4>
         <h2>Our Products</h2>
-        <div class="wrapper">
-            <div class="content">
-                <img src="/assets/imgs/slide2 1.svg" alt="" />
-                <div>
-                    <h2>MRsoftEsp</h2>
-                    <p>Enterprise Schools Portal</p>
+
+        <div  class="" id="slides">
+            <div class="wrapper">
+                <div class="content">
+
+                    <img src="/assets/imgs/slide2 1.svg" alt="" />
+                    <div>
+                        <h2>MRsoftEsp</h2>
+                        <p>Enterprise Schools Portal</p>
+                    </div>
                 </div>
-            </div>
-            <div class="content" >
-                <img src="/assets/imgs/Employee – 6 2.svg" alt="" />
-                <div>
-                    <h2>MRsoftEsp</h2>
-                    <p>Enterprise Schools Portal</p>
+                <div class="content" >
+                    <img src="/assets/imgs/Employee – 6 2.svg" alt="" />
+                    <div>
+                        <h2>MRsoftEsp</h2>
+                        <p>Enterprise Schools Portal</p>
+                    </div>
                 </div>
-            </div>
-            <div class="content">
-                <img src="/assets/imgs/slide2 1.svg" alt="" />
-                <div>
-                    <h2>MRsoftEsp</h2>
-                    <p>Enterprise Schools Portal</p>
+                <div class="content">
+                    <img src="/assets/imgs/slide2 1.svg" alt="" />
+                    <div>
+                        <h2>MRsoftEsp</h2>
+                        <p>Enterprise Schools Portal</p>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section class="help">
         <h2>
@@ -179,5 +193,6 @@
             </form>
         </div>
     </footer>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>

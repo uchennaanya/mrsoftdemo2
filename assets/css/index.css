@@ -209,16 +209,6 @@ border-radius: 50%;
   margin: -7vh 0 -6vh 10%;
 }
 
-.product {
-  display: flex;
-  align-items: center;
-}
-
-.product .img {
-  width: 40%;
-  padding-right: 2rem;
-}
-
 .services_page {
   padding: 5rem 0;
 }
@@ -252,7 +242,7 @@ border-radius: 50%;
 }
 
 
-
+/*  */
 
 section a {
   background-color: #1e1e1e;

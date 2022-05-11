@@ -47,6 +47,10 @@ nav {
   background: #61e0ff;
   transition: all 0.9s ease-in-out;
 }
+.text-effect {
+  display: flex;
+  flex-direction: column;
+}
 .banner {
   background: url("/assets/imgs/Rectangle\ 62.svg"),
     url("/assets/imgs/banner.png") top center no-repeat;
@@ -85,7 +89,8 @@ border-radius: 50%;
 }
 .banner .welcome {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .banner h3 {
   text-align: left;
@@ -115,7 +120,7 @@ section a:hover {
 }
 
 .services .content {
-  padding: 0 2rem 1rem 1rem;
+  padding: 2rem 0;
 }
 
 .services .content h4 {
@@ -123,7 +128,7 @@ section a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.8rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -135,8 +140,8 @@ section a:hover {
   color: #07048E;
 }
 .wrapper2 img {
-  width: 20vw;
-  height: 25vh;
+  width: 100vw;
+  height: 40vh;
   object-fit: fill;
 }
 
@@ -201,9 +206,9 @@ h4 {
 }
 
 .partners div {
-  padding: 2rem;
+  padding: 0;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -212,14 +217,14 @@ h4 {
 }
 
 .product {
+  width: 100%;
+  overflow: hidden;
   text-align: center;
   padding: 2rem 0;
 }
 .product .wrapper {
   display: flex;
   width: 100%;
-  /* border: 1px solid red; */
-
 }
 
 .product .content {
@@ -232,7 +237,7 @@ h4 {
 
 .product img {
   width: 50%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .help {
@@ -247,6 +252,9 @@ h4 {
 
 .help div p {
   padding: 1rem 0 3rem 0;
+}
+.help a {
+  background: #003F4E;
 }
 .help div {
   text-align: center;
@@ -339,6 +347,11 @@ nav {
 .navHeader {
   width: 100%;
 }
+
+.banner .welcome{
+  flex-direction: row;
+  align-items: center;
+}
 .andel {
   flex-direction: row;
   padding: 4rem 6rem;
@@ -355,10 +368,28 @@ nav {
 .services .wrapper2 {
   flex-direction: row;
 }
+
+.wrapper2 img {
+  width: 20vw;
+  height: 25vh;
+  object-fit: fill;
+}
+.services .content {
+  padding: 0 2rem 1rem 1rem;
+}
 .img img {
   object-fit: fill;
   width: auto;
   height: 70vh;
+}
+
+.text-effect {
+  flex-direction: row;
+}
+
+.partners div {
+  padding: 2rem;
+  flex-wrap: no-wrap;
 }
 
 .form {

@@ -11,13 +11,23 @@
 .navHeader {
   padding: 0 2rem;
   position: fixed;
-  width: 100%;
+  width: auto;
   display: flex;
-  height: auto;
   justify-content: space-between;
   align-items: center;
   background-color: #f7f7f7;
   z-index: 2 !important;
+}
+nav {
+  display: none;
+}
+.bars {
+  background: rgba(0, 0, 0, 0.8) url('/assets/imgs/Vector.svg') no-repeat center;
+  padding: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
 }
 .navHeader li {
   display: inline-block;
@@ -46,7 +56,7 @@
   color: #fff;
   justify-content: space-between;
   align-items: center;
-  padding:0 3rem;
+  padding:0 1rem;
   height: 500px;
 }
 
@@ -55,7 +65,7 @@ color: black; font-size: 30px; cursor: pointer; background: rgba(0, 0, 0, 0.3);
 padding: 6px;
 width:fit-content;
 height:fit-content;
-display: flex;
+display: none;
 align-items: center;
 justify-content: center;
 border-radius: 50%;
@@ -101,7 +111,7 @@ section a:hover {
   background: url("/assets/imgs/Ellipse5.svg") no-repeat center 100px;
   background-size: 35vw;
   object-fit: fill;
-  padding: 4rem;
+  padding: 1rem;
 }
 
 .services .content {
@@ -150,10 +160,12 @@ h4 {
 
 .services .wrapper {
   display: flex;
+  flex-direction: column;
   margin: 10vh 0;
 }
 .services .wrapper2 {
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 .services li {
@@ -166,7 +178,8 @@ h4 {
 .andel {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 6rem;
+  flex-direction: column;
+  padding: 4rem 1rem;
 }
 
 .andel p {
@@ -175,6 +188,7 @@ h4 {
 
 .img img {
   object-fit: fill;
+  width:100%;
   height: 70vh;
 }
 
@@ -187,9 +201,10 @@ h4 {
 }
 
 .partners div {
-  padding: 2rem 15rem;
+  padding: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
 
 .partners img {
@@ -202,6 +217,8 @@ h4 {
 }
 .product .wrapper {
   display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
 
 }
 
@@ -219,21 +236,21 @@ h4 {
 }
 
 .help {
-  background: rgba(0, 0, 0, 1) url("/assets/imgs/help.svg") no-repeat center;
-  background-size: contain;
-  padding: 5rem 0;
+  background: rgba(0, 0, 0, 1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
   flex-direction: column;
+  height: 40vh;
 }
-.help a {
-  background: #003f4e;
-  margin-top: 3rem;
+
+.help div p {
+  padding: 1rem 0 3rem 0;
 }
-.help p {
-  padding-top: 1rem;
+.help div {
+  text-align: center;
+  position: absolute;
 }
 footer input,
 textarea {
@@ -267,7 +284,7 @@ input[type='email'] {
   text-indent: 15px;
 }
 .form {
-  width: 35%;
+  width: 100%;
 }
 textarea {
   height: 100px;
@@ -303,7 +320,53 @@ footer h3 {margin-bottom: 3rem;}
 footer {
   background-color: #000;
   color: #fff;
-  padding: 4rem 8rem;
+  padding: 4rem 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    padding:0 3rem;
+  }
+  .banner .span {
+    display: flex;
+  }
+nav {
+  display: inline-block;
+}
+.navHeader {
+  width: 100%;
+}
+.andel {
+  flex-direction: row;
+  padding: 4rem 6rem;
+}
+.bars {
+  display: none;
+}
+.services {
+  padding: 4rem;
+}
+.services .wrapper {
+  flex-direction: row;
+}
+.services .wrapper2 {
+  flex-direction: row;
+}
+.img img {
+  object-fit: fill;
+  width: auto;
+  height: 70vh;
+}
+
+.form {
+  width: 35%;
+}
+
+footer {
+  flex-direction: row;
+  padding: 4rem 8rem;
+}
 }

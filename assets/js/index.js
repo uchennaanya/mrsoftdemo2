@@ -1,3 +1,17 @@
+let toggle = document.getElementById("toggle")
+let show = document.getElementById("show")
+
+toggle.addEventListener("click", () => {
+
+    if(show.classList.contains("hide")) {
+        show.classList.remove("hide")
+        show.classList.add("show")
+    } else {
+        show.classList.add("hide")
+        show.classList.remove("show")
+    }
+})
+
 let xOffset = 0;
 let isMouseIn = false;
 const slides = document.getElementById("slides");

@@ -458,7 +458,8 @@ display: inline-block;
 }
 
 .help {
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1) url('/assets/imgs/particles.png') center;
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;

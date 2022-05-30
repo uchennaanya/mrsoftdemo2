@@ -2,19 +2,24 @@ let toggle = document.getElementById("toggle")
 let show = document.getElementById("show")
 
 toggle.addEventListener("click", () => {
-
     if(show.classList.contains("hide")) {
         show.classList.remove("hide")
         show.classList.add("show")
+        // console.log("Hey I was clicked!")
+
     } else {
         show.classList.add("hide")
         show.classList.remove("show")
+        console.log("Hey I was clicked!")
+
     }
+    // console.log("Hey I was clicked!")
+
 })
 
 let xOffset = 0;
 let isMouseIn = false;
-const slides = document.getElementById("slides");
+var slides = document.getElementById("slides");
 
 setInterval(translate, 0);
 

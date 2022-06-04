@@ -9,7 +9,7 @@
 }
 
 .navHeader {
-  padding: 0.4rem 1rem 0 0.5rem;
+  padding: 0 1.5rem 0 0.5rem;
   position: fixed;
   width: 100vw;
   display: flex;
@@ -26,21 +26,20 @@
   z-index: 2 !important;
   background: #f7f7f7;
   width: 100vw;
-  padding: 1rem;
   position: absolute;
-  top: 10vh;
+  top: 9vh;
   left: 0;
 }
 
 .show li {
-  margin: 2vh 0;
-  z-index: 999999 !important;
+  z-index: 2 !important;
   list-style: none;
+  border: 1px solid;
+  display: block;
 }
 
-.hide {
+.hide li {
   display: none;
-  transition: 4s;
 }
 
 .bars {
@@ -55,11 +54,9 @@
 .navHeader a {
   text-decoration: none;
   display: inline-block;
-  display: inline-block;
   padding: 0.5rem;
 }
 .active {
-  background-color: #003f4e;
   color: #61e0ff !important;
 }
 
@@ -556,6 +553,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .active {
+    background-color: #003f4e;
+    color: #61e0ff !important;
+  }
   .banner {
     padding: 0 3rem;
   }
@@ -565,7 +566,7 @@ footer {
 
   .navHeader {
     width: 100%;
-    padding: 0 1rem 0 0;
+    padding: 1rem 1rem 1rem 0;
   }
 
   .navHeader a {
@@ -577,12 +578,16 @@ footer {
     z-index: 1;
     background: none;
     width: auto;
-    padding: 0;
     position: static;
+  }
+
+  .hide li {
+    display: inline !important;
   }
 
   .show li {
     display: inline-block !important;
+    border: none;
   }
 
   .banner .welcome {
